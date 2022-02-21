@@ -14,4 +14,14 @@ export class AppController {
   getHello2(): {} {
     return this.appService.getHello2();
   }
+  @Get()
+  @Render('home.html')
+  getHome(): {} {
+    return this.appService.getHome();
+  }
+  @Get('about-us')
+  @Render('about-us.html')
+  getAboutUs(): {} {
+    return this.appService.getAboutUs();
+  }
 }
